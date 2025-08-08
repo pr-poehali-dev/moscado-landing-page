@@ -6,60 +6,60 @@ import Icon from "@/components/ui/icon";
 const Index = () => {
   const benefits = [
     {
-      icon: "Crown",
-      title: "Премиальный сервис",
-      description: "Элитные решения для гостиниц класса люкс с индивидуальным подходом к каждому клиенту"
+      icon: "Factory",
+      title: "Собственное производство",
+      description: "Полный цикл изготовления текстильной продукции из натуральных материалов высокого качества"
     },
     {
-      icon: "TrendingUp",
-      title: "Рост доходности",
-      description: "Увеличение средней выручки на номер до 25% благодаря оптимизации операционных процессов"
+      icon: "Truck",
+      title: "Оптовые поставки",
+      description: "Широкий ассортимент фетра, войлока и хлопковых изделий для вашего производства"
     },
     {
-      icon: "Shield",
-      title: "Надежность системы",
-      description: "99.9% времени безотказной работы с комплексной системой резервного копирования"
+      icon: "Award",
+      title: "100% натуральные материалы",
+      description: "Экологичная продукция из качественного хлопка, шерсти и других натуральных волокон"
     },
     {
       icon: "Users",
-      title: "Персонализация",
-      description: "Индивидуальные решения для каждого типа заведения: отели, спа, банные комплексы"
+      title: "Надёжное партнёрство",
+      description: "Помогаем вашему бизнесу создавать продукцию, которую запомнят и полюбят клиенты"
     }
   ];
 
-  const cases = [
+  const products = [
     {
-      title: "Отель Метрополь",
-      category: "5-звездочный отель",
-      result: "+35% выручка",
-      description: "Внедрение комплексной системы управления увеличило операционную эффективность"
+      title: "Фетровые изделия",
+      category: "Фетр и войлок",
+      description: "Высококачественный фетр различных цветов и толщины для промышленного использования",
+      features: ["100% шерсть", "Различные плотности", "Широкая цветовая гамма"]
     },
     {
-      title: "Спа-центр Аквамарин",
-      category: "Премиум SPA",
-      result: "+28% клиентов",
-      description: "Автоматизация процессов бронирования и управления клиентской базой"
+      title: "Хлопковая продукция", 
+      category: "Натуральный хлопок",
+      description: "Изделия из 100% хлопка для текстильного производства и швейной промышленности",
+      features: ["100% хлопок", "Высокая прочность", "Гипоаллергенность"]
     },
     {
-      title: "Банный комплекс Царь-Баня",
-      category: "Банный комплекс",
-      result: "+42% загрузка",
-      description: "Оптимизация расписания и внедрение системы лояльности"
+      title: "Сопутствующие товары",
+      category: "Дополнительные материалы", 
+      description: "Полный комплект материалов и фурнитуры для текстильного производства",
+      features: ["Фурнитура", "Нитки", "Аксессуары"]
     }
   ];
 
-  const partners = [
-    "Marriott International",
-    "Hilton Worldwide",
-    "InterContinental Hotels",
-    "Radisson Hotel Group",
-    "Accor Hotels"
+  const clients = [
+    "Швейные фабрики",
+    "Мебельные производства", 
+    "Рекламные агентства",
+    "Творческие мастерские",
+    "Промышленные предприятия"
   ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-hospitality-silver via-white to-hospitality-silver">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-hospitality-gold/20">
+      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-hospitality-gold/20">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="font-playfair text-2xl font-bold text-hospitality-navy">
@@ -68,12 +68,12 @@ const Index = () => {
             <div className="hidden md:flex space-x-8 font-source text-hospitality-navy">
               <a href="#home" className="hover:text-hospitality-gold transition-colors">Главная</a>
               <a href="#benefits" className="hover:text-hospitality-gold transition-colors">Преимущества</a>
-              <a href="#cases" className="hover:text-hospitality-gold transition-colors">Кейсы</a>
-              <a href="#partners" className="hover:text-hospitality-gold transition-colors">Партнеры</a>
+              <a href="#products" className="hover:text-hospitality-gold transition-colors">Продукция</a>
+              <a href="#clients" className="hover:text-hospitality-gold transition-colors">Клиенты</a>
               <a href="#contact" className="hover:text-hospitality-gold transition-colors">Контакты</a>
             </div>
             <Button className="bg-hospitality-gold hover:bg-hospitality-gold/90 text-hospitality-navy font-source font-semibold">
-              Связаться с нами
+              Запросить прайс
             </Button>
           </div>
         </div>
@@ -86,51 +86,52 @@ const Index = () => {
             <div className="space-y-8 animate-fade-in">
               <div className="space-y-6">
                 <Badge className="bg-hospitality-gold/10 text-hospitality-navy border-hospitality-gold">
-                  Для индустрии гостеприимства
+                  Текстильное производство
                 </Badge>
                 <h1 className="font-playfair text-5xl lg:text-6xl font-bold text-hospitality-navy leading-tight">
-                  Премиальные решения для директоров отелей
+                  Надёжный партнёр для вашего бизнеса
                 </h1>
                 <p className="font-source text-xl text-hospitality-gray leading-relaxed">
-                  Увеличиваем прибыльность гостиниц, банных комплексов и спа-центров 
-                  с помощью инновационных технологий управления и автоматизации процессов
+                  Собственное производство и оптовые поставки текстильной продукции 
+                  из натуральных материалов. Широкий ассортимент изделий из 100% хлопка, 
+                  фетра, войлока и сопутствующих товаров для вашего производства.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-hospitality-navy hover:bg-hospitality-navy/90 text-white font-source font-semibold px-8">
-                  Получить консультацию
+                  Получить каталог
                 </Button>
                 <Button size="lg" variant="outline" className="border-hospitality-gold text-hospitality-navy hover:bg-hospitality-gold/10 font-source font-semibold px-8">
-                  Смотреть кейсы
+                  Смотреть продукцию
                 </Button>
               </div>
               <div className="flex items-center gap-8 pt-4">
                 <div className="text-center">
-                  <div className="font-playfair text-3xl font-bold text-hospitality-navy">200+</div>
-                  <div className="font-source text-sm text-hospitality-gray">Успешных проектов</div>
+                  <div className="font-playfair text-3xl font-bold text-hospitality-navy">500+</div>
+                  <div className="font-source text-sm text-hospitality-gray">Довольных клиентов</div>
                 </div>
                 <div className="text-center">
-                  <div className="font-playfair text-3xl font-bold text-hospitality-navy">98%</div>
-                  <div className="font-source text-sm text-hospitality-gray">Клиенты остаются</div>
+                  <div className="font-playfair text-3xl font-bold text-hospitality-navy">100%</div>
+                  <div className="font-source text-sm text-hospitality-gray">Натуральные материалы</div>
                 </div>
                 <div className="text-center">
-                  <div className="font-playfair text-3xl font-bold text-hospitality-navy">15+</div>
-                  <div className="font-source text-sm text-hospitality-gray">Лет опыта</div>
+                  <div className="font-playfair text-3xl font-bold text-hospitality-navy">24/7</div>
+                  <div className="font-source text-sm text-hospitality-gray">Поддержка клиентов</div>
                 </div>
               </div>
             </div>
             <div className="relative animate-slide-up">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="/img/e7ae4931-5015-4e12-ade1-42a487dfd02d.jpg" 
-                  alt="Премиальный отель" 
+                  src="/img/1ecf1abc-75cb-4282-8160-5641c0d142aa.jpg" 
+                  alt="Текстильное производство" 
                   className="w-full h-[500px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-hospitality-navy/20 to-transparent"></div>
               </div>
               <div className="absolute -bottom-4 -left-4 bg-hospitality-gold text-hospitality-navy p-4 rounded-xl shadow-lg">
-                <div className="font-playfair text-lg font-semibold">+35%</div>
-                <div className="font-source text-sm">Средний рост выручки</div>
+                <div className="font-playfair text-lg font-semibold">Качество</div>
+                <div className="font-source text-sm">Собственное производство</div>
               </div>
             </div>
           </div>
@@ -145,11 +146,11 @@ const Index = () => {
               Наши преимущества
             </Badge>
             <h2 className="font-playfair text-4xl font-bold text-hospitality-navy mb-6">
-              Почему директора выбирают Moscado
+              Почему выбирают Moscado
             </h2>
             <p className="font-source text-xl text-hospitality-gray max-w-3xl mx-auto">
-              Мы понимаем специфику индустрии гостеприимства и предлагаем решения, 
-              которые реально работают в российских реалиях
+              Мы специализируемся на производстве и поставках высококачественной текстильной продукции 
+              для различных отраслей промышленности
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -174,70 +175,106 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Cases Section */}
-      <section id="cases" className="py-20 bg-gradient-to-br from-hospitality-silver to-white">
+      {/* Products Section */}
+      <section id="products" className="py-20 bg-gradient-to-br from-hospitality-silver to-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
             <Badge className="bg-hospitality-navy/10 text-hospitality-navy border-hospitality-navy mb-4">
-              Кейсы клиентов
+              Наша продукция
             </Badge>
             <h2 className="font-playfair text-4xl font-bold text-hospitality-navy mb-6">
-              Истории успеха наших клиентов
+              Широкий ассортимент текстильных материалов
             </h2>
             <p className="font-source text-xl text-hospitality-gray max-w-3xl mx-auto">
-              Реальные результаты внедрения наших решений в ведущих заведениях России
+              От натурального хлопка до высококачественного фетра - все необходимые материалы для вашего производства
             </p>
           </div>
-          <div className="grid lg:grid-cols-3 gap-8">
-            {cases.map((caseStudy, index) => (
+          <div className="grid lg:grid-cols-3 gap-8 mb-12">
+            {products.map((product, index) => (
               <Card key={index} className="hover:shadow-2xl transition-all duration-300 bg-white border-none">
                 <CardHeader>
-                  <div className="flex items-center justify-between mb-2">
-                    <Badge variant="outline" className="border-hospitality-gold text-hospitality-navy">
-                      {caseStudy.category}
-                    </Badge>
-                    <div className="font-playfair text-2xl font-bold text-hospitality-gold">
-                      {caseStudy.result}
-                    </div>
-                  </div>
+                  <Badge variant="outline" className="border-hospitality-gold text-hospitality-navy w-fit mb-2">
+                    {product.category}
+                  </Badge>
                   <CardTitle className="font-playfair text-xl text-hospitality-navy">
-                    {caseStudy.title}
+                    {product.title}
                   </CardTitle>
+                  <CardDescription className="font-source text-hospitality-gray leading-relaxed">
+                    {product.description}
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="font-source text-hospitality-gray leading-relaxed">
-                    {caseStudy.description}
-                  </CardDescription>
+                  <div className="space-y-2">
+                    {product.features.map((feature, idx) => (
+                      <div key={idx} className="flex items-center gap-2">
+                        <Icon name="Check" size={16} className="text-hospitality-gold" />
+                        <span className="font-source text-sm text-hospitality-gray">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
                 </CardContent>
               </Card>
             ))}
           </div>
-          <div className="text-center mt-12">
-            <Button className="bg-hospitality-navy hover:bg-hospitality-navy/90 text-white font-source font-semibold px-8">
-              Посмотреть все кейсы
-            </Button>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              <img 
+                src="/img/1e851785-fc60-4617-8a07-f41fef7f1217.jpg" 
+                alt="Фетровые материалы" 
+                className="w-full h-[400px] object-cover rounded-2xl shadow-lg"
+              />
+            </div>
+            <div className="space-y-6">
+              <h3 className="font-playfair text-3xl font-bold text-hospitality-navy">
+                Качество, проверенное временем
+              </h3>
+              <p className="font-source text-lg text-hospitality-gray leading-relaxed">
+                Наша продукция изготавливается из отборных натуральных материалов с соблюдением 
+                всех технологических стандартов. Мы гарантируем стабильное качество и своевременную поставку.
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <Icon name="Shield" className="text-hospitality-gold" size={20} />
+                  <span className="font-source text-hospitality-gray">Контроль качества на каждом этапе</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Icon name="Leaf" className="text-hospitality-gold" size={20} />
+                  <span className="font-source text-hospitality-gray">Только натуральные материалы</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Icon name="Clock" className="text-hospitality-gold" size={20} />
+                  <span className="font-source text-hospitality-gray">Быстрая обработка заказов</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Partners Section */}
-      <section id="partners" className="py-20 bg-white">
+      {/* Clients Section */}
+      <section id="clients" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
             <Badge className="bg-hospitality-gold/10 text-hospitality-navy border-hospitality-gold mb-4">
-              Наши партнеры
+              Наши клиенты
             </Badge>
             <h2 className="font-playfair text-4xl font-bold text-hospitality-navy mb-6">
-              Нам доверяют лидеры индустрии
+              Работаем с различными отраслями
             </h2>
+            <p className="font-source text-xl text-hospitality-gray max-w-3xl mx-auto">
+              Наша продукция востребована в швейной промышленности, мебельном производстве и творческих индустриях
+            </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center opacity-60">
-            {partners.map((partner, index) => (
-              <div key={index} className="text-center">
-                <div className="font-source font-semibold text-hospitality-gray hover:text-hospitality-navy transition-colors cursor-pointer">
-                  {partner}
-                </div>
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+            {clients.map((client, index) => (
+              <Card key={index} className="text-center hover:shadow-lg transition-all duration-300 border-hospitality-gold/20">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 bg-hospitality-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Icon name="Building" className="text-hospitality-gold" size={24} />
+                  </div>
+                  <p className="font-source font-semibold text-hospitality-navy">{client}</p>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
@@ -251,17 +288,18 @@ const Index = () => {
               Свяжитесь с нами
             </Badge>
             <h2 className="font-playfair text-4xl font-bold mb-6">
-              Готовы увеличить прибыльность вашего заведения?
+              Готовы стать нашим партнёром?
             </h2>
             <p className="font-source text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-              Получите персональную консультацию и план внедрения решений для вашего бизнеса
+              Получите персональное предложение и каталог нашей продукции. 
+              Мы поможем подобрать оптимальные материалы для вашего производства.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button size="lg" className="bg-hospitality-gold hover:bg-hospitality-gold/90 text-hospitality-navy font-source font-semibold px-8">
-                Заказать консультацию
+                Получить каталог
               </Button>
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 font-source font-semibold px-8">
-                Скачать презентацию
+                Запросить прайс-лист
               </Button>
             </div>
             <div className="grid md:grid-cols-3 gap-8 mt-16 pt-16 border-t border-white/20">
@@ -277,8 +315,8 @@ const Index = () => {
               </div>
               <div className="text-center">
                 <Icon name="MapPin" className="text-hospitality-gold mb-4 mx-auto" size={32} />
-                <h3 className="font-source font-semibold mb-2">Офис</h3>
-                <p className="text-white/80">Москва, Тверская 15</p>
+                <h3 className="font-source font-semibold mb-2">Производство</h3>
+                <p className="text-white/80">Москва и область</p>
               </div>
             </div>
           </div>
@@ -290,7 +328,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center">
             <div className="font-playfair text-2xl font-bold text-white mb-4">MOSCADO</div>
-            <p className="font-source">© 2024 Moscado. Все права защищены.</p>
+            <p className="font-source">© 2024 Moscado. Производство и поставки текстильной продукции.</p>
           </div>
         </div>
       </footer>
